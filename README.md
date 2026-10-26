@@ -18,8 +18,6 @@ Uninstall the old ViPER4Android app, otherwise the audio gets processed twice.
 ## Effects
 Output (volume, balance, limiter), Equalizer (10 bands), Bass, Clarity, Dynamic System, Headphone Surround, Field Surround, Differential Surround, Crossfeed, Reverb, Convolver, ViPER-DDC, Compressor, Auto Gain, Spectrum Extension, Tube Simulator, AnalogX, Speaker Optimization.
 
-Headphone Surround, Convolver, DDC, Compressor and Auto Gain are empty stubs in the ViPERFX_RE core, so the shim implements them itself. They run after the core's effect chain:
-
 - **Headphone Surround**: the five original ViPER kernels (Level 1 to 5), run through FFT convolution.
 - **Convolver**: FFT convolution with an impulse response file (`.wav` or `.irs`; mono, stereo or 4-channel; up to 2 seconds are used).
 - **ViPER-DDC**: biquad filters from a `.vdc` file (the 44100 and 48000 Hz sets).
