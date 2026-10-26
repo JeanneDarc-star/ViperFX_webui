@@ -1,0 +1,8 @@
+allow audioserver adb_data_file dir { search getattr }
+allow audioserver adb_data_file file { read open getattr }
+allow hal_audio_default adb_data_file dir { search getattr }
+allow hal_audio_default adb_data_file file { read open getattr }
+allow mediaserver adb_data_file dir { search getattr }
+allow mediaserver adb_data_file file { read open getattr }
+allow audioserver vendor_configs_file file { read open getattr }
+allow hal_audio_default vendor_configs_file file { read open getattr }

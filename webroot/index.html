@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>ViPER4Android</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="appbar">
+    <h1>ViPER4Android</h1>
+    <p class="sub" data-i18n="app.sub"></p>
+  </header>
+
+  <section class="master" id="masterCard">
+    <div class="master-text">
+      <span class="master-title" data-i18n="master.title"></span>
+      <span class="master-sub" id="masterNote"></span>
+    </div>
+    <label class="switch" title="Master">
+      <input type="checkbox" id="master" aria-label="Master">
+      <span class="track"><span class="knob"></span></span>
+    </label>
+  </section>
+
+  <main id="app"></main>
+
+  <section class="card open settings" id="settings">
+    <div class="head static">
+      <div class="title"><span class="name" data-i18n="set.title"></span></div>
+    </div>
+    <div class="body">
+      <div class="ctl">
+        <span class="lab" data-i18n="set.lang"></span>
+        <span class="val small" data-i18n="set.langhint"></span>
+        <div class="field"><div class="seg" id="langSeg" role="radiogroup"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="foot">
+    <div class="row">
+      <button id="btnStatus" type="button" class="tonal" data-i18n="btn.diag"></button>
+      <button id="btnReset" type="button" class="outlined" data-i18n="btn.reset"></button>
+    </div>
+    <pre id="statusOut" hidden></pre>
+  </section>
+</div>
+<script src="i18n.js"></script>
+<script src="schema.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
